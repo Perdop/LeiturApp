@@ -76,14 +76,28 @@
             android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="246dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F3F3F3"
+            android:text="Voltar"
+            android:textColor="#000000"
+            app:cornerRadius="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="256dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="#FFEB3B"
-            android:text="Voltar"
-            app:cornerRadius="10dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:visibility="visible"
+            tools:srcCompat="@tools:sample/avatars" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -93,7 +107,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#9E3D3D"
+        android:backgroundTint="#212FA8"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,15 +119,15 @@
             android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="256dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:backgroundTintMode="add"
-            android:text="Voltar" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="246dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F3F3F3"
+            android:text="Voltar"
+            android:textColor="#000000"
+            app:cornerRadius="10dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -123,7 +137,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#4C8035"
+        android:backgroundTint="#212FA8"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,15 +149,15 @@
             android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="256dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:backgroundTintMode="add"
-            android:text="Voltar" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="246dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F3F3F3"
+            android:text="Voltar"
+            android:textColor="#000000"
+            app:cornerRadius="10dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -153,8 +167,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#9A8A3A"
-        android:visibility="gone"
+        android:backgroundTint="#212FA8"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,15 +179,15 @@
             android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="256dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:backgroundTintMode="add"
-            android:text="Voltar" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="246dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F3F3F3"
+            android:text="Voltar"
+            android:textColor="#000000"
+            app:cornerRadius="10dp" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
