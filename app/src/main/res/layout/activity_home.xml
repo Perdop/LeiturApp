@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C7830"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="409dp"
+        android:layout_height="80dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="648dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="82dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="35dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="180dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="180dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
