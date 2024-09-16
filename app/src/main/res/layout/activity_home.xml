@@ -6,22 +6,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#799CC4"
-    tools:context=".HomeActivity">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:id="@+id/RelativeLayout1"
         android:layout_width="409dp"
         android:layout_height="80dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="409dp"
         android:layout_height="648dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="82dp">
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RelativeLayout1">
 
         <Button
             android:id="@+id/button"
