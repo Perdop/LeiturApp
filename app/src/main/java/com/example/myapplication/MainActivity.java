@@ -23,9 +23,5 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        buttonHistoria = findViewById(R.id.button);
-        buttonAutor = findViewById(R.id.button2);
-        buttonPersonagens = findViewById(R.id.button3);
-        buttonTimeline = findViewById(R.id.button4);
     }
 }
