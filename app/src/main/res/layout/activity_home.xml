@@ -8,24 +8,15 @@
     android:background="#799CC4"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="409dp"
-        android:layout_height="307dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RelativeLayout1" />
-
     <FrameLayout
         android:layout_width="409dp"
         android:layout_height="411dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <View
             android:id="@+id/view"
@@ -49,14 +40,19 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerInParent="true"
-                android:layout_marginBottom="15dp"
-                android:text="Jefferson Tenorio"
-                android:textColor="#000000" />
+                android:layout_marginBottom="18dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Jeferson Tenório"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="221dp"
                 android:layout_height="295dp"
+                android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
                 app:cardCornerRadius="20dp">
 
                 <ImageView
@@ -67,4 +63,17 @@
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
     </FrameLayout>
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="317dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="413dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
