@@ -8,119 +8,51 @@
     android:background="#799CC4"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:id="@+id/scrollView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <FrameLayout
-                android:id="@+id/frameLayout"
-                android:layout_width="409dp"
-                android:layout_height="411dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="1dp">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="320dp"
+            android:layout_height="280dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            tools:layout_marginTop="40dp" />
 
-                <View
-                    android:id="@+id/view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/box_shadow" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardViewHist"
+            android:layout_width="200dp"
+            android:layout_height="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
 
-                <RelativeLayout
-                    android:id="@+id/RelativeLayout1"
-                    android:layout_width="409dp"
-                    android:layout_height="400dp"
-                    android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:background="@drawable/border">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginBottom="18dp"
-                        android:fontFamily="@font/montserrat_semibold"
-                        android:text="Jeferson Tenório"
-                        android:textColor="#000000"
-                        android:textSize="36sp"
-                        android:textStyle="bold" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="221dp"
-                        android:layout_height="295dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="20dp"
-                        app:cardCornerRadius="20dp">
-
-                        <ImageView
-                            android:id="@+id/imageView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/autor" />
-                    </androidx.cardview.widget.CardView>
-                </RelativeLayout>
-            </FrameLayout>
-
-            <!-- Título "Obras" acima do ViewPager -->
-            <TextView
-                android:id="@+id/obrasTextView"
+            <ImageView
+                android:id="@+id/imageView3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Obras"
-                android:textColor="#000000"
-                android:textSize="30sp"
-                tools:layout_marginTop="30dp" />
+                android:layout_height="298dp"
+                app:srcCompat="@drawable/avesso" />
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewPager"
-                android:layout_width="200dp"
-                android:layout_height="280dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp" />
+        </androidx.cardview.widget.CardView>
 
-            <!-- Título "Sobre" -->
-            <TextView
-                android:id="@+id/titleTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Sobre"
-                android:textColor="#000000"
-                android:textSize="30sp" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_stars"
+            android:rating="0"
+            android:stepSize="1" />
 
-            <Button
-                android:id="@+id/infoButton"
-                android:layout_width="360dp"
-                android:layout_height="170dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:backgroundTint="#FFFFFF"
-                android:fontFamily="@font/montserrat_medium"
-                android:padding="16dp"
-                android:text="Jeferson Tenório é um escritor, professor e pesquisador brasileiro, radicado em Porto Alegre. Seu romance de estreia, O beijo na parede, foi publicado em 2013, sendo eleito Livro do Ano pela Associação Gaúcha de Escritores. Seus textos teatrais e contos foram traduzidos para o inglês e o castelhano."
-                android:textColor="#000000"
-                android:textSize="15dp"
-                app:cornerRadius="10dp" />
-
-        </LinearLayout>
-    </ScrollView>
-
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
