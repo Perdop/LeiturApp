@@ -10,20 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="0dp">
-
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager"
-            android:layout_width="320dp"
-            android:layout_height="280dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            tools:layout_marginTop="40dp" />
+        android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/CardViewHist"
@@ -39,20 +26,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="298dp"
                 app:srcCompat="@drawable/avesso" />
-
         </androidx.cardview.widget.CardView>
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CardViewHist"
+            android:layout_marginTop="20dp"
             android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:isIndicator="false"
             android:numStars="5"
-            android:progressDrawable="@drawable/rating_stars"
             android:rating="0"
             android:stepSize="1" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/ratingBar"
+            android:layout_marginTop="20dp" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

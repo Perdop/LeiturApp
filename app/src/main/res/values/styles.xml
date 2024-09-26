@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Outros estilos -->
+
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">@android:color/holo_orange_light</item> <!-- Cor ao clicar -->
+        <item name="android:progressBackgroundTint">@android:color/darker_gray</item> <!-- Cor do fundo -->
+        <item name="android:progressTintMode">src_in</item>
+    </style>
+</resources>
