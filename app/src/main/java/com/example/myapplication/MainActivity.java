@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hist); // Certifique-se de que esse é o layout correto
+        setContentView(R.layout.activity_hist);
 
         ratingBar = findViewById(R.id.ratingBar);
         viewPager = findViewById(R.id.viewPager);
@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         ratingBar.setOnRatingBarChangeListener((ratingBar, rating, fromUser) -> {
-            // Aqui você pode implementar o que deve acontecer ao mudar a nota
         });
     }
 }
