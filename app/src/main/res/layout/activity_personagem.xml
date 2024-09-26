@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".personagemActivity">
+
+    <ScrollView
+        android:id="@+id/personagemScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/personagemScrollViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#799CC4">
+
+            <Button
+                android:id="@+id/personagem1CardShadow"
+                android:layout_width="243dp"
+                android:layout_height="273dp"
+                android:layout_marginTop="42dp"
+                android:backgroundTint="#C0A13A"
+                app:cornerRadius="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/personagem1Card"
+                android:layout_width="240dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#EBC446"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/personagem1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="personagem1"
+                android:scaleType="centerInside"
+                android:scaleX="1"
+                android:src="@drawable/personagem1_radius"
+                app:layout_constraintBottom_toBottomOf="@+id/personagem1Card"
+                app:layout_constraintEnd_toEndOf="@+id/personagem1Card"
+                app:layout_constraintStart_toStartOf="@+id/personagem1Card"
+                app:layout_constraintTop_toTopOf="@+id/personagem1Card"
+                app:layout_constraintVertical_bias="0.29000002" />
+
+            <TextView
+                android:id="@+id/textPersonagem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="PEDRO"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/personagem1Card"
+                app:layout_constraintEnd_toEndOf="@+id/personagem1Card"
+                app:layout_constraintStart_toStartOf="@+id/personagem1Card" />
+
+            <Button
+                android:id="@+id/personagem2CardShadow"
+                android:layout_width="243dp"
+                android:layout_height="273dp"
+                android:layout_marginTop="77dp"
+                android:backgroundTint="#3D26C0"
+                app:cornerRadius="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/personagem1Card" />
+
+            <Button
+                android:id="@+id/personagem2Card"
+                android:layout_width="240dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#4C30EB"
+                android:text="Button"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/personagem1Card" />
+
+            <ImageButton
+                android:id="@+id/personagem2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="personagem2"
+                android:scaleType="centerInside"
+                android:src="@drawable/personagem2_radius"
+                app:layout_constraintBottom_toBottomOf="@+id/personagem2Card"
+                app:layout_constraintEnd_toEndOf="@+id/personagem2Card"
+                app:layout_constraintStart_toStartOf="@+id/personagem2Card"
+                app:layout_constraintTop_toTopOf="@+id/personagem2Card"
+                app:layout_constraintVertical_bias="0.29000002" />
+
+            <TextView
+                android:id="@+id/textPersonagem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="HENRIQUE"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/personagem2Card"
+                app:layout_constraintEnd_toEndOf="@+id/personagem2Card"
+                app:layout_constraintHorizontal_bias="0.546"
+                app:layout_constraintStart_toStartOf="@id/personagem2Card" />
+
+            <Button
+                android:id="@+id/personagem3CardShadow"
+                android:layout_width="243dp"
+                android:layout_height="273dp"
+                android:layout_marginTop="77dp"
+                android:backgroundTint="#C0244E"
+                app:cornerRadius="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personagem2Card" />
+
+            <Button
+                android:id="@+id/personagem3Card"
+                android:layout_width="240dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#EA2C60"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personagem2Card" />
+
+            <ImageButton
+                android:id="@+id/personagem3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="personagem2"
+                android:scaleType="centerInside"
+                android:src="@drawable/personagem3_radius"
+                app:layout_constraintBottom_toBottomOf="@id/personagem3Card"
+                app:layout_constraintEnd_toEndOf="@id/personagem3Card"
+                app:layout_constraintStart_toStartOf="@id/personagem3Card"
+                app:layout_constraintTop_toTopOf="@id/personagem3Card"
+                app:layout_constraintVertical_bias="0.29000002" />
+
+            <TextView
+                android:id="@+id/textPersonagem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="MARTA"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@id/personagem3Card"
+                app:layout_constraintEnd_toEndOf="@id/personagem3Card"
+                app:layout_constraintStart_toStartOf="@id/personagem3Card" />
+
+            <Button
+                android:id="@+id/personagem4CardShadow"
+                android:layout_width="243dp"
+                android:layout_height="273dp"
+                android:layout_marginTop="77dp"
+                android:backgroundTint="#36C038"
+                app:cornerRadius="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personagem3Card" />
+
+            <Button
+                android:id="@+id/personagem4Card"
+                android:layout_width="240dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#42EB44"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personagem3Card" />
+
+            <ImageButton
+                android:id="@+id/personagem4"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="personagem2"
+                android:scaleType="centerInside"
+                android:src="@drawable/personagem4_radius"
+                app:layout_constraintBottom_toBottomOf="@id/personagem4Card"
+                app:layout_constraintEnd_toEndOf="@id/personagem4Card"
+                app:layout_constraintStart_toStartOf="@id/personagem4Card"
+                app:layout_constraintTop_toTopOf="@id/personagem4Card"
+                app:layout_constraintVertical_bias="0.29000002" />
+
+            <TextView
+                android:id="@+id/textPersonagem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:text="JULIANA"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@id/personagem4Card"
+                app:layout_constraintEnd_toEndOf="@id/personagem4Card"
+                app:layout_constraintStart_toStartOf="@id/personagem4Card" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personagemLayout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/personagem_text_radius"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/personagemNome1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Nome: Pedro"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/personagemDescricao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Descrição:"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personagemCard1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/personagemCardImg1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:srcCompat="@drawable/pedro" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/voltarPersonagem1"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="17dp"
+            android:backgroundTint="#97000000"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="100dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/voltarImgPersonagem1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="31dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="Voltar"
+            android:scaleType="centerInside"
+            android:src="@drawable/backbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personagemLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/personagem_text_radius2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/personagemNome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Nome: Henrique"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/personagemDescricao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Descrição:"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personagemCard2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/personagemCardImg2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:srcCompat="@drawable/henrique" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/voltarPersonagem2"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="17dp"
+            android:backgroundTint="#97000000"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="100dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/voltarImgPersonagem2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="31dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="Voltar"
+            android:scaleType="centerInside"
+            android:src="@drawable/backbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personagemLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/personagem_text_radius3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/personagemNome3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Nome: Marta"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/personagemDescricao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Descrição:"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personagemCard3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/personagemCardImg3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:srcCompat="@drawable/marta" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/voltarPersonagem3"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="17dp"
+            android:backgroundTint="#97000000"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="100dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/voltarImgPersonagem3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="31dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="Voltar"
+            android:scaleType="centerInside"
+            android:src="@drawable/backbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

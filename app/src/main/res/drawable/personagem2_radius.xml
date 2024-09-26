@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Camada da borda arredondada -->
+        <item>
+                <shape
+                    android:shape="rectangle">
+                        <corners android:radius="30dp"/> <!-- Raio dos cantos arredondados -->
+                        <solid android:color="#4C30EB"/> <!-- Cor do fundo da borda -->
+                </shape>
+        </item>
+        <!-- Camada da imagem de fundo -->
+        <item>
+                <bitmap
+                    android:src="@drawable/henrique"
+                    android:gravity="fill" />
+        </item>
+</layer-list>
