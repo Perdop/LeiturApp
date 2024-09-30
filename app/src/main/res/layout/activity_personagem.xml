@@ -92,7 +92,7 @@
                 android:layout_width="240dp"
                 android:layout_height="270dp"
                 android:layout_marginTop="75dp"
-                android:backgroundTint="#4C30EB"
+                android:backgroundTint="#4C30EA"
                 android:text="Button"
                 app:cornerRadius="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -230,6 +230,18 @@
                 app:layout_constraintEnd_toEndOf="@id/personagem4Card"
                 app:layout_constraintStart_toStartOf="@id/personagem4Card" />
 
+            <TextView
+                android:id="@+id/personagensMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="39dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.2"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personagem4Card" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
@@ -253,7 +265,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="Nome: Pedro"
             android:textColor="#000000"
@@ -266,12 +278,14 @@
 
         <TextView
             android:id="@+id/personagemDescricao1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Descrição:"
+            android:justificationMode="inter_word"
+            android:text="Descrição:  um homem negro que busca entender a vida e a morte de seu pai, Henrique, após este ser assassinado pela polícia. Pedro embarca em uma jornada de autoconhecimento e de resgate da história familiar, confrontando o racismo e as desigualdades sociais. "
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -364,7 +378,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="Nome: Henrique"
             android:textColor="#000000"
@@ -377,12 +391,14 @@
 
         <TextView
             android:id="@+id/personagemDescricao2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Descrição:"
+            android:justificationMode="inter_word"
+            android:text="Descrição: Pai de Pedro, um homem negro que luta contra as adversidades da vida, marcado pela violência policial e pelo racismo. Sua morte violenta é o ponto de partida da narrativa e impulsiona Pedro a buscar respostas sobre sua vida e legado. "
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -475,7 +491,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="Nome: Marta"
             android:textColor="#000000"
@@ -488,12 +504,13 @@
 
         <TextView
             android:id="@+id/personagemDescricao3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Descrição:"
+            android:text="Descrição:  Mãe de Pedro, uma mulher complexa e marcada por um passado doloroso. Sua relação com Henrique é marcada por amor, conflitos e traumas. "
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -549,6 +566,118 @@
 
         <ImageButton
             android:id="@+id/voltarImgPersonagem3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="30dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="Voltar"
+            android:scaleType="centerInside"
+            android:src="@drawable/backbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personagemLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/personagem_text_radius4"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/personagemNome4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Nome: Juliana"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/personagemDescricao4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Descrição: Segunda namorada de Henrique, uma mulher branca que busca um relacionamento livre das amarras raciais. Sua presença na vida de Henrique levanta questões sobre a identidade e a busca por aceitação. "
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personagemCard4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/personagemCardImg4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
+                app:srcCompat="@drawable/juliana" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/voltarPersonagem4"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="17dp"
+            android:backgroundTint="#97000000"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="100dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/voltarImgPersonagem4"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginTop="32dp"

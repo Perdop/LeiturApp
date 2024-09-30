@@ -33,10 +33,12 @@ public class personagemActivity extends AppCompatActivity {
         showText(findViewById(R.id.personagem1Card), findViewById(R.id.personagem1),findViewById(R.id.personagemLayout1),personagensTela );
         showText(findViewById(R.id.personagem2Card), findViewById(R.id.personagem2),findViewById(R.id.personagemLayout2),personagensTela );
         showText(findViewById(R.id.personagem3Card), findViewById(R.id.personagem3),findViewById(R.id.personagemLayout3),personagensTela );
+        showText(findViewById(R.id.personagem4Card), findViewById(R.id.personagem4),findViewById(R.id.personagemLayout4),personagensTela );
         /* Personagem - close text */
         closeText(findViewById(R.id.voltarImgPersonagem1) , findViewById(R.id.voltarPersonagem1),findViewById(R.id.personagemLayout1), personagensTela );
         closeText(findViewById(R.id.voltarImgPersonagem2) , findViewById(R.id.voltarPersonagem2),findViewById(R.id.personagemLayout2), personagensTela );
         closeText(findViewById(R.id.voltarImgPersonagem3) , findViewById(R.id.voltarPersonagem3),findViewById(R.id.personagemLayout3), personagensTela );
+        closeText(findViewById(R.id.voltarImgPersonagem4) , findViewById(R.id.voltarPersonagem4),findViewById(R.id.personagemLayout4), personagensTela );
     }
 
     /* Personagem - show text function */
