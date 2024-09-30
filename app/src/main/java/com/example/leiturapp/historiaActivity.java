@@ -18,7 +18,6 @@ public class historiaActivity extends AppCompatActivity {
         ratingBar = findViewById(R.id.ratingBar);
         viewPager = findViewById(R.id.viewPager);
 
-        // Configura o adapter para o ViewPager
         CustomPagerAdapter adapter = new CustomPagerAdapter(this);
         viewPager.setAdapter(adapter);
 

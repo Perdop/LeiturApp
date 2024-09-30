@@ -18,7 +18,7 @@ public class CustomPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 2; // Número de páginas no carrossel
+        return 3; // Número de páginas no carrossel atualizado
     }
 
     @Override
@@ -34,8 +34,10 @@ public class CustomPagerAdapter extends PagerAdapter {
 
         if (position == 0) {
             view = inflater.inflate(R.layout.item_curiosidade, container, false);
-        } else {
+        } else if (position == 1) {
             view = inflater.inflate(R.layout.item_resumo, container, false);
+        } else {
+            view = inflater.inflate(R.layout.item_resenhas, container, false); // Nova página
         }
 
         container.addView(view);

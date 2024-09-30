@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textResenhas"
+    android:layout_width="340dp"
+    android:layout_height="300dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Resenhas: "
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="“Este é um livro necessário para todos. É um livro que traz um retrato brutal do racismo estrutural no país. Hoje vamos fazer uma resenha de O Avesso da Pele de Jeferson Tenório.” - Rafael Hertel "
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="“Muita expectativa criei para ler O avesso da pele de Jeferson Tenório. E a expectativa foi tanta que, antes de lê-lo, resolvi assistir a uma das características lives deste 2020. Eu que não gosto de revelações sobre enredos, acabei recebendo spoilers diretamente da fonte.  "
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Mas a experiência de ler O avesso é muito superior, e qualquer “entregada” do enredo não é capaz de debilitar a experiência da leitura.” - Anderson Novais "
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

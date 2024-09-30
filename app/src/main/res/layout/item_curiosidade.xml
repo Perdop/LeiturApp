@@ -15,22 +15,22 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:padding="16dp">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    android:fontFamily="@font/montserrat_medium"
-    android:text="Curiosidades"
-    android:textColor="#000000"
-    android:textSize="18sp"
-    android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Polemica: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fontFamily="@font/montserrat_medium"
-    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet."
-    android:textColor="#000000"
-    android:textSize="16sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="O livro &quot;O Avesso da Pele&quot;, de Jeferson Tenório, gerou controvérsia em escolas por conta de um vocabulário considerado impróprio. A diretora de uma escola no Rio Grande do Sul expôs os trechos polêmicos nas redes sociais, provocando debates. Defensores do livro afirmam que as passagens foram mal interpretadas. Parlamentares conservadores criticaram a obra, ligando-a à gestão do MEC e ao PT, mesmo sendo escolhido para o PNLD em 2022, sob o governo Bolsonaro."
+        android:textColor="#000000"
+        android:textSize="14dp" />
 </LinearLayout>
     </androidx.cardview.widget.CardView>

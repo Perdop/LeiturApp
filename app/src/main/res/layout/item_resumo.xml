@@ -15,22 +15,22 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:padding="16dp">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    android:fontFamily="@font/montserrat_medium"
-    android:text="Resumo"
-    android:textColor="#000000"
-    android:textSize="18sp"
-    android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Peça: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fontFamily="@font/montserrat_medium"
-    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset."
-    android:textColor="#000000"
-    android:textSize="16sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="O espetáculo apresenta quatro atores que se revezam em três papéis principais: Henrique, o pai; Pedro, o filho; e o narrador. O Coletivo Ocutá valoriza a individualidade de cada ator, sem dar destaque a um protagonista em particular. Com um elenco composto por Alexandre Ammano, Bruno Rocha, Marcos Oli, Vitor Britto e Victor Salomão, a história inspirada no livro de Jeferson Tenório como uma adaptação para o teatro foi realizada com sensibilidade, trazendo à vida a obra de forma brilhante e emocionante. "
+        android:textColor="#000000"
+        android:textSize="14sp" />
 </LinearLayout>
     </androidx.cardview.widget.CardView>
