@@ -19,7 +19,7 @@ public class autorActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
 
         List<Integer> images = Arrays.asList(
-                R.drawable.avesso, // Adicione suas imagens aqui
+                R.drawable.avesso,
                 R.drawable.beio,
                 R.drawable.darkside,
                 R.drawable.capadeus
