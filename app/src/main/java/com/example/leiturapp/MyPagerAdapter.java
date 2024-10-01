@@ -44,5 +44,3 @@ public class MyPagerAdapter extends RecyclerView.Adapter<MyPagerAdapter.ViewHold
         }
     }
 }
-
-
