@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#799CC4"
-    tools:context=".timelineActivity" >
+    android:background="#475F7A"
+    tools:context=".timelineActivity">
 
     <ScrollView
         android:id="@+id/personagemScrollView"
@@ -26,7 +26,7 @@
             <LinearLayout
                 android:id="@+id/Linha1"
                 android:layout_width="3dp"
-                android:layout_height="253dp"
+                android:layout_height="200dp"
                 android:layout_marginEnd="20dp"
                 android:background="#F6F6F6"
                 android:orientation="vertical"
@@ -40,7 +40,7 @@
                 android:layout_width="0dp"
                 android:layout_height="3dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="290dp"
+                android:layout_marginTop="236dp"
                 android:layout_marginEnd="16dp"
                 android:background="#FDFDFD"
                 android:orientation="vertical"
@@ -53,9 +53,9 @@
             <LinearLayout
                 android:id="@+id/linha3"
                 android:layout_width="3dp"
-                android:layout_height="200dp"
+                android:layout_height="450dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="330dp"
+                android:layout_marginTop="275dp"
                 android:background="#FDFDFD"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,24 +65,320 @@
 
             </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/timelineData1"
+            <LinearLayout
+                android:id="@+id/linha4"
                 android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="760dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FDFDFD"
+                android:orientation="vertical"
+                android:rotation="12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linha5"
+                android:layout_width="3dp"
                 android:layout_height="200dp"
+                android:layout_marginTop="800dp"
+                android:layout_marginEnd="20dp"
+                android:background="#FDFDFD"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData"
+                android:layout_width="0dp"
+                android:layout_height="152dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="40dp"
                 app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/timelineImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/timeline1" />
+
+                <TextView
+                    android:id="@+id/timelineTittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Primeiros anos"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/timelineTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pedro descobre a morte de seu pai, e relembra como ele era e sua relação com ele. "
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/timelineTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="A morte do pai de Pedro, deixa um vazio e um mistério a ser desvendado."
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData2"
+                android:layout_width="0dp"
+                android:layout_height="152dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="380dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/timelineImage2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/timeline2" />
+
+                <TextView
+                    android:id="@+id/timelineTittle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Viagem"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/timelineTxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pedro embarca em uma jornada para desvendar o passado do pai e reconstruir sua história "
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData3"
+                android:layout_width="0dp"
+                android:layout_height="152dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/timelineImage3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/timeline3" />
+
+                <TextView
+                    android:id="@+id/timelineTittle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pesquisas"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/timelineTxt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pedro busca informações sobre o pai em documentos, fotos e conversas com familiares e conhecidos."
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData4"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="820dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/timelineTxt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pedro descobre fatos sobre a vida do pai que o surpreendem e o ajudam a entender melhor sua própria identidade."
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData5"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="930dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/timelineTxt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pedro estabelece conexões entre o passado do pai e sua própria vida, compreendendo melhor seus desafios e medos. "
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/timelineStop1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginTop="115dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="313dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="440dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="610dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="850dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="960dp"
                 android:layout_marginEnd="12dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="100dp"

@@ -22,7 +22,7 @@
             android:id="@+id/personagemScrollViewLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#799CC4">
+            android:background="#475F7A">
 
             <Button
                 android:id="@+id/personagem1CardShadow"
