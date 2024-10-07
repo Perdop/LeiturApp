@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#799CC4"
+    android:background="#475F7A"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -92,6 +92,15 @@
                 android:layout_height="280dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp" />
+
+            <!-- Layout para os indicadores -->
+            <LinearLayout
+                android:id="@+id/indicatorsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp" />
 
             <!-- Título "Sobre" -->
             <TextView

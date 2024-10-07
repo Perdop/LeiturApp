@@ -1,18 +1,22 @@
 package com.example.leiturapp;
 
 import android.os.Bundle;
-import android.os.Handler;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class autorActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;
-    private Handler handler;
-    private static final int PAGE_DELAY = 3000; // 3 segundos
+    private LinearLayout indicatorsLayout;
+    private List<ImageView> indicators;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,7 @@ public class autorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_autor);
 
         viewPager = findViewById(R.id.viewPager);
+        indicatorsLayout = findViewById(R.id.indicatorsLayout);
 
         List<Integer> images = Arrays.asList(
                 R.drawable.avesso,
@@ -31,34 +36,48 @@ public class autorActivity extends AppCompatActivity {
         MyPagerAdapter adapter = new MyPagerAdapter(images);
         viewPager.setAdapter(adapter);
 
-        // Iniciar o auto-scroll
-        handler = new Handler();
-        startAutoScroll();
-    }
+        // Configurar os indicadores
+        setupIndicators(images.size());
 
-    private void startAutoScroll() {
-        handler.postDelayed(new Runnable() {
+        // Ignorar todos os eventos de toque
+        viewPager.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void run() {
-                if (viewPager.getCurrentItem() == viewPager.getAdapter().getItemCount() - 1) {
-                    viewPager.setCurrentItem(0, true);
-                } else {
-                    viewPager.setCurrentItem(viewPager.getCurrentItem() + 1, true);
-                }
-                handler.postDelayed(this, PAGE_DELAY);
+            public boolean onTouch(View v, MotionEvent event) {
+                return false; // Permite a interação com o ViewPager
             }
-        }, PAGE_DELAY);
+        });
+
+        // Atualizar indicadores na mudança de página
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                updateIndicators(position);
+            }
+        });
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        handler.removeCallbacksAndMessages(null); // Parar o auto-scroll ao pausar
+    private void setupIndicators(int count) {
+        indicators = new ArrayList<>();
+        indicatorsLayout.removeAllViews(); // Limpar layout antes de adicionar novos indicadores
+
+        for (int i = 0; i < count; i++) {
+            ImageView indicator = new ImageView(this);
+            indicator.setImageResource(R.drawable.indicator_inactive); // Define a imagem padrão para inativo
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            params.setMargins(8, 0, 8, 0); // Margens entre os indicadores
+            indicatorsLayout.addView(indicator, params);
+            indicators.add(indicator);
+        }
+
+        updateIndicators(0); // Atualiza os indicadores para a primeira página
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        startAutoScroll(); // Reiniciar o auto-scroll ao retomar
+    private void updateIndicators(int position) {
+        for (int i = 0; i < indicators.size(); i++) {
+            indicators.get(i).setImageResource(i == position ? R.drawable.indicator_active : R.drawable.indicator_inactive);
+        }
     }
 }

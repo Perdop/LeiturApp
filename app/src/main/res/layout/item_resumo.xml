@@ -29,7 +29,7 @@ android:padding="16dp">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_medium"
-        android:text="O espetáculo apresenta quatro atores que se revezam em três papéis principais: Henrique, o pai; Pedro, o filho; e o narrador. O Coletivo Ocutá valoriza a individualidade de cada ator, sem dar destaque a um protagonista em particular. Com um elenco composto por Alexandre Ammano, Bruno Rocha, Marcos Oli, Vitor Britto e Victor Salomão, a história inspirada no livro de Jeferson Tenório como uma adaptação para o teatro foi realizada com sensibilidade, trazendo à vida a obra de forma brilhante e emocionante. "
+        android:text="O espetáculo conta com quatro atores que interpretam três papéis principais: Henrique, o pai; Pedro, o filho; e o narrador. O Coletivo Ocutá valoriza a individualidade de cada ator, sem um protagonista definido. Com um elenco formado por Alexandre Ammano, Bruno Rocha, Marcos Oli, Vitor Britto e Victor Salomão, a adaptação da obra de Jeferson Tenório é sensível e emocionante."
         android:textColor="#000000"
         android:textSize="14sp" />
 </LinearLayout>
