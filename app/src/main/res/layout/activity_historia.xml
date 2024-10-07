@@ -48,5 +48,14 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="20dp" />
 
+        <!-- Layout para os indicadores -->
+        <LinearLayout
+            android:id="@+id/indicatorsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/viewPager"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
