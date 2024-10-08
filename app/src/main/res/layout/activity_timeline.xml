@@ -83,7 +83,7 @@
             <LinearLayout
                 android:id="@+id/linha5"
                 android:layout_width="3dp"
-                android:layout_height="200dp"
+                android:layout_height="500dp"
                 android:layout_marginTop="800dp"
                 android:layout_marginEnd="20dp"
                 android:background="#FDFDFD"
@@ -286,7 +286,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/timelineData5"
                 android:layout_width="0dp"
-                android:layout_height="90dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="930dp"
                 android:layout_marginEnd="40dp"
@@ -305,7 +305,61 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="15dp"
                     android:fontFamily="@font/inter"
+                    android:paddingBottom="15dp"
                     android:text="Pedro estabelece conexões entre o passado do pai e sua própria vida, compreendendo melhor seus desafios e medos. "
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData6"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="1040dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/timelineTxt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:paddingBottom="15dp"
+                    android:text="Pedro encontra uma forma de se reconciliar com o passado do pai e consigo mesmo."
+                    android:textColor="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineData7"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="1130dp"
+                android:layout_marginEnd="40dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/timelineTxt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Pedro encontra uma forma de se reconciliar com o passado do pai e consigo mesmo."
                     android:textColor="#000000" />
             </androidx.cardview.widget.CardView>
 
@@ -386,6 +440,33 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="1060dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timelineStop8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="1150dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
